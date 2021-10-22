@@ -1,3 +1,7 @@
+"use strict";
+
+
+
 let neoInstr = document.getElementById("neocitiesInstructies");
 let lijst = document.getElementById("lijst");
 let lijstSrc = document.getElementById("lijstSrc").innerHTML;
@@ -31,7 +35,7 @@ function diplayLijst() {
 
 function diplayDeelopdracht(evt) {
 
-    let id = evt.currentTarget.getAttribute("id");
+    let id = evt.currentTarget.getAttribute("id");    
     let el = document.getElementById(id + "desc");
     let src = document.getElementById(id + "descSrc").innerHTML;
 
