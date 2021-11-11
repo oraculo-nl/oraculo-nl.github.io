@@ -1,0 +1,27 @@
+<pre>
+#list images
+docker images
+
+#list containers
+docker container ls -a
+
+#start docker container in interactive mode and attach to it
+docker start -ia [container]
+
+#run docker image in a new container 
+#with unprivileged user "node"
+#in interactive mode and attach to it
+#start a bash shell
+#set working directory
+#map dirs
+#map ports
+#(same command can be used with image: docker run [image])
+docker run -it -u "node" -w="/home/node" -v "/home/wchau/GitProjects/node:/home/node/data" -p 3000:3000 [image] bash
+
+#docker connect to an already started container
+docker exec -it [container] bash
+
+#docker rename container
+docker container rename [old container name] [new container name]
+
+</pre>
