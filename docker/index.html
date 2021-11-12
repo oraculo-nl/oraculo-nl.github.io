@@ -16,7 +16,8 @@ docker start -ia [container]
 #map dirs
 #map ports
 #(same command can be used with image: docker run [image])
-docker run -it -u "node" -w="/home/node" -v "/home/wchau/GitProjects/node:/home/node/data" -p 3000:3000 [image] bash
+(Linux) docker run -it -u "node" -w="/home/node" -v "/home/wchau/GitProjects/node:/home/node/data" -p 3000:3000 [image] bash
+(Windows) docker run -it -u "node" -w="/home/node" -v "//c/Users/hq0132410/OneDrive - Windesheim Office365/Code/node:/home/node/data" -p 3000:3000 [image] bash   
 
 #docker connect to an already started container
 docker exec -it [container] bash
