@@ -9,4 +9,4 @@ kramdown:
 math_engine: mathjax
 syntax_highlighter: rouge
 markdown: kramdown  
-title: 
+name: 
